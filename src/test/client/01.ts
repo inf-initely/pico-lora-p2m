@@ -43,7 +43,7 @@ async function main() {
   })
 
   button.on('click', () => {
-    runTest(10, 48, () => randomNumber(1000, 2000))
+    runTest(10, 48, () => randomNumber(5000, 10000))
   })
 }
 
