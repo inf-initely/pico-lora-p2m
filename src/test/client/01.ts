@@ -23,16 +23,18 @@ async function main() {
   })
   req.on('dropped', (err) => {
     print.log(getMsPrefix(), 'A message got dropped:', err)
+    print.log(getMsPrefix(), 'Dropped message data:', err.string)
   })
   req.on('send', (msg) => {
     print.log(getMsPrefix(), 'Request sent:', msg)
   })
 
-  async function runTest(times: number, payloadSize = 48, waitTime = 5000) {
-    for (let i = 0; i < times; i++)
-      await doRoundTrip(payloadSize, () =>
-        randomNumber(waitTime, waitTime + 5000)
-      )
+  async function runTest(
+    times: number,
+    payloadSize = 48,
+    waitTime = () => randomNumber(5000, 10000)
+  ) {
+    for (let i = 0; i < times; i++) await doRoundTrip(payloadSize, waitTime)
   }
 
   Object.assign(globalThis, {
@@ -41,7 +43,7 @@ async function main() {
   })
 
   button.on('click', () => {
-    runTest(10)
+    runTest(10, 48, () => randomNumber(1000, 2000))
   })
 }
 

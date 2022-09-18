@@ -17,17 +17,27 @@ export class Req extends EventEmitter {
     })
   }
 
-  send(data: Uint8Array) {
+  send(data: Uint8Array, fixedId?: number) {
     if (this.blocking)
       throw new Error(
         'Request is in block state until reply is received from the server'
       )
     this.blocking = true
     const message = MessagePacket.create(data)
+    if (fixedId != null) message.setId(fixedId)
     print.log(`Requesting server with message #${message.id}:`, data)
 
     const handler = messageHandler(
       (msg) => {
+        if (msg.id !== message.id) {
+          print.log(
+            `Received message but it\'s not for us, dropping it... (waiting for: ${message.id}, instead got: ${msg.id})`
+          )
+          return this.emit(
+            'dropped',
+            new UnwantedIdError(msg.data.toTypedArray(), message.id, msg.id)
+          )
+        }
         // delete this listener
         this.connection.off('message', handler)
         print.log('Reply listener destroyed.')
@@ -62,10 +72,12 @@ export class Req extends EventEmitter {
     data: Uint8Array,
     options?: {
       generateWaitTime?: () => number
+      fixedId?: number
     }
   ) {
-    const { generateWaitTime } = options ?? {}
-    this.send(data)
+    const { generateWaitTime, fixedId } = options ?? {}
+    const id = fixedId != null ? fixedId : randomNumber(0xffff)
+    this.send(data, id)
     const handler = (data: MessagePacket) => {
       this.off('message', handler)
       clearTimeout(timeout)
@@ -74,7 +86,7 @@ export class Req extends EventEmitter {
     let timeout = setTimeout(() => {
       if (this.blocking || this.pending != null) {
         this.reset()
-        this.reliableSend(data)
+        this.reliableSend(data, { fixedId: id })
       }
     }, generateWaitTime?.() ?? randomNumber(5000, 10000))
   }
