@@ -6,7 +6,7 @@ import { prepare } from '../prepare.js'
 
 const print = new Logger(true, ['[Client]'])
 async function main() {
-  const { display, lora, clock } = await prepare()
+  const { display, lora, clock, button } = await prepare()
   const req = new Req(lora)
   const doRoundTrip = Common.doRoundTrip.bind(req)
   const getMsPrefix = Common.getMsPrefix.bind(clock)
@@ -38,6 +38,10 @@ async function main() {
   Object.assign(globalThis, {
     doRoundTrip,
     runTest,
+  })
+
+  button.on('click', () => {
+    runTest(10)
   })
 }
 
