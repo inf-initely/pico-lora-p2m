@@ -3,14 +3,13 @@ import Demo from './client/demo.js'
 import { setupModule, setupAuxIndicator } from './common/init.js'
 import { wait } from './lib/async.js'
 import { Req } from './lib/connection/request.js'
+import { Logger } from './lib/debug.js'
 import { Display } from './lib/display.js'
 import { Mode } from './lib/modules/lora/constant.js'
-import { getClock } from './lib/modules/tdma/client.js'
-import { Print } from './lib/print.js'
-import { lcd, lora, lora_uart, onboardLED } from './module.js'
+import { lcd, lora, lora_uart } from './module.js'
 import { HW } from './pinout.js'
 
-const print = Print.prefix('[Main]')
+const print = new Logger(false, ['[Client]'])
 async function main() {
   await setupModule()
   setupAuxIndicator()

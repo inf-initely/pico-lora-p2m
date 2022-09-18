@@ -1,5 +1,4 @@
 import { formatByte, u82int } from '../helper.js'
-import { Message } from './packet.js'
 
 export class NetworkError extends Error {
   public string: string
@@ -15,8 +14,30 @@ export class CRCError extends NetworkError {
   public got: number
 
   constructor(data: Uint8Array, expected: number) {
-    super(`Message is corrupted, fail at CRC check!`, data)
+    const got = u82int(data.subarray(-4))
+    super(
+      `Message is corrupted, fail at CRC check! Expected: ${expected}, instead got: ${got}`,
+      data
+    )
     this.expected = expected
-    this.got = u82int(data.subarray(-4))
+    this.got = got
+  }
+}
+
+export class UnwantedIdError extends NetworkError {
+  constructor(data: Uint8Array, expected: number, got: number) {
+    super(
+      `Message is not wanted. Waiting for: ${expected}, instead got: ${got}`,
+      data
+    )
+  }
+}
+
+export class UnwantedPacketError extends NetworkError {
+  constructor(data: Uint8Array, expected: number, got: number) {
+    super(
+      `Message is not wanted. Accept only: ${expected}, instead got: ${got}`,
+      data
+    )
   }
 }

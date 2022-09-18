@@ -1,15 +1,15 @@
 import { setupModule, setupAuxIndicator } from './common/init.js'
 import { Rep } from './lib/connection/reply.js'
 import { Mode } from './lib/modules/lora/constant.js'
-import { Print } from './lib/print.js'
 import { lora, onboardLED, lora_uart, lcd_i2c, lcd } from './module.js'
 import Demo from './server/demo.js'
 import { HW } from './pinout.js'
 import { Button } from 'button'
 import { Display } from './lib/display.js'
 import { wait } from './lib/async.js'
+import { Logger } from './lib/debug.js'
 
-const print = Print.prefix('[Main]')
+const print = new Logger(false, ['[Server]'])
 async function main() {
   await setupModule()
   setupAuxIndicator()

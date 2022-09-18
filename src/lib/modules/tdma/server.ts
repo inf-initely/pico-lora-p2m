@@ -1,5 +1,5 @@
 import { Connection } from 'src/lib/connection/interface.js'
-import { Message } from 'src/lib/connection/packet.js'
+import { MessagePacket } from 'src/lib/connection/packet.js'
 import { Rep } from 'src/lib/connection/reply.js'
 import { int2u8 } from 'src/lib/helper.js'
 import { Print } from 'src/lib/print.js'
@@ -9,9 +9,9 @@ export async function startServerClockSync(connection: Connection) {
   print.info('Starting clock broadcast interval...')
   const interval = setInterval(() => {
     const now = int2u8(millis())
-    const { packet } = Message.create(now)
+    const message = MessagePacket.create(now)
 
-    connection.send(packet)
+    connection.send(message.toTypedArray())
   }, 200)
 
   return new Promise((res, rej) => {

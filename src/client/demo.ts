@@ -1,12 +1,9 @@
-import { BufferedGraphicsContext } from 'graphics'
-import { Rep } from 'src/lib/connection/reply.js'
-import { nanoid } from 'nanoid/non-secure'
-import { Print } from 'src/lib/print.js'
 import { Req } from 'src/lib/connection/request.js'
-import { Message } from 'src/lib/connection/packet.js'
+import { MessagePacket } from 'src/lib/connection/packet.js'
 import { Display } from 'src/lib/display.js'
+import { Logger } from 'src/lib/debug.js'
 
-const print = Print.prefix('[Demo]')
+const print = new Logger(false, ['[Client]'])
 console.log(print)
 
 function equal(a: Uint8Array, b: Uint8Array) {
@@ -36,11 +33,13 @@ export default class Demo {
 
   constructor(private req: Req, private display: Display) {
     this.charLimit = display.screenSize.width / display.fontSize.width
+    req.on('dropped', (data) => {})
   }
 
   async getSize() {
     return new Promise<number>((res, rej) => {
-      const handler = (msg: Message) => {
+      const handler = (msg: MessagePacket) => {
+        console.log('Get message from fuck', msg)
         this.req.off('message', handler)
         const data = msg.data.toTypedArray()
         if (data.byteLength !== 2)
@@ -56,7 +55,7 @@ export default class Demo {
 
   async getData(num: number) {
     return new Promise<Uint8Array>((res, rej) => {
-      const handler = (msg: Message) => {
+      const handler = (msg: MessagePacket) => {
         this.req.off('message', handler)
         const data = msg.data.toTypedArray()
         res(data)

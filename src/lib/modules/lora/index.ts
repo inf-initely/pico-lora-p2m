@@ -1,25 +1,17 @@
 import { EventEmitter } from 'events'
 import { UART } from 'uart'
 import { Pin } from '../pin.js'
-import PQueue from 'p-queue'
-import {
-  Config,
-  Mode,
-  Speed,
-  Option,
-  Version,
-  Header,
-  FixedAddress,
-} from './constant.js'
+import { Config, Mode, Version } from './constant.js'
 import { wait } from '../../async.js'
-import { IllegalOperationError, TimeoutError } from '../../error.js'
+import { IllegalOperationError } from '../../error.js'
 import { Address } from '../../connection/packet.js'
 import { Connection } from 'src/lib/connection/interface.js'
-import { Print } from 'src/lib/print.js'
-import { PacketStream } from 'src/lib/connection/stream.js'
+import LinkControl from 'src/lib/connection/data-link.js'
+import { Logger } from 'src/lib/debug.js'
+import { NetworkError } from 'src/lib/connection/error.js'
 
 const TIMEOUT_LIMIT = 1000
-const print = Print.prefix('[LoRaE32]')
+const print = new Logger(false, ['[LoRaE32]'])
 
 export class LoRaE32 extends EventEmitter implements Connection {
   m0: Pin
@@ -37,7 +29,7 @@ export class LoRaE32 extends EventEmitter implements Connection {
   private version: Version | null = null
 
   private isSetup: false
-  private packetStream = new PacketStream()
+  private link: LinkControl
 
   constructor(
     private uart: UART,
@@ -60,25 +52,16 @@ export class LoRaE32 extends EventEmitter implements Connection {
     this.m1.setMode(OUTPUT)
     this.aux.setMode(INPUT_PULLUP)
 
-    // this.setMode(Mode.SLEEP).then(() => {
-    //   this.readParameters().then((config) => {
-    //     this.config = config
-    //   })
-    // })
-    // this.readVersion().then((version) => {
-    //   this.version = version
-    // })
-
-    // let empty = new Uint8Array(dataSize)
-    // const buf = new Uint8Array(dataSize)
-    print.info('Starting LoRaE32 raw packet listener.')
-    this.uart.addListener('data', (data) => {
-      print.log('Got raw packet from UART:', data)
-      // silently drop if in SLEEP mode
-      if (this.mode !== Mode.SLEEP) this.packetStream.write(data)
-    })
-    this.packetStream.on('packet', (data: Uint8Array) => {
+    print.log('Starting LoRaE32 raw packet listener.')
+    this.link = new LinkControl(uart)
+    this.link.on('message', (data: Uint8Array) => {
       this.emit('message', data)
+    })
+    this.link.on('error', (e) => {
+      this.emit('error', e)
+    })
+    this.link.on('dropped', (e) => {
+      this.emit('dropped', e)
     })
   }
 
@@ -92,13 +75,6 @@ export class LoRaE32 extends EventEmitter implements Connection {
     return this.aux.digitalRead()
   }
 
-  // protected attachAuxListener() {
-  //   if (this.auxWatcherId != null) return
-  //   this.auxWatcherId = setWatch((pin) => {
-  //     this.emit('aux', this.ready())
-  //   }, this.aux.pin)
-  // }
-
   async setMode(mode: Mode) {
     const m = (
       {
@@ -109,42 +85,13 @@ export class LoRaE32 extends EventEmitter implements Connection {
       } as const
     )[mode]
 
-    // return this.queue.add(async () => {
     this.m0.digitalWrite(m[0])
     this.m1.digitalWrite(m[1])
 
-    // await wait(1)
-    // const update = () => {
-    //   this.mode = mode
-    //   this.emit('mode', mode)
-    // }
-    print.info(`Changing LoRa mode to ${Mode[mode]} (${mode})`)
+    print.log(`Changing LoRa mode to ${Mode[mode]} (${mode})`)
     this.mode = mode
     this.emit('mode', mode)
-
-    // if (this.ready()) {
-    //   return update()
-    // }
-
-    // return new Promise<void>((res, rej) => {
-    //   this.aux.once('high-level', () => {
-    //     res()
-    //   })
-    // })
-    // })
   }
-
-  // private waitForUartResponse(): Promise<Uint8Array> {
-  //   return new Promise<Uint8Array>((res, rej) => {
-  //     setTimeout(() => {
-  //       rej(new TimeoutError(TIMEOUT_LIMIT, 'Waiting for response from module'))
-  //     }, TIMEOUT_LIMIT)
-
-  //     this.uart.once('data', (data: Uint8Array) => {
-  //       res(data)
-  //     })
-  //   })
-  // }
 
   private async receive(packetLength: number) {
     return new Promise<Uint8Array>((res, rej) => {
@@ -200,17 +147,6 @@ export class LoRaE32 extends EventEmitter implements Connection {
     this.assertReady()
     return new Address(this.config!)
   }
-
-  // async setAddress(address: Address) {
-  //   this.assertSleepMode()
-  //   await this.setConfig({
-  //     ...this.config,
-  //     highAddress: address.hi,
-  //     lowAddress: address.lo,
-  //     channel: address.chan,
-  //   })
-  //   this.config = await this.readParameters()
-  // }
 
   async setConfig(config: Config) {
     this.assertSleepMode()
@@ -287,75 +223,11 @@ export class LoRaE32 extends EventEmitter implements Connection {
     if (this.auxWatcherId != null) clearWatch(this.auxWatcherId)
   }
 
-  // send(
-  //   data: Uint8Array,
-  //   address: Omit<FixedAddress, 'channel'> & {
-  //     channel?: number
-  //   }
-  // ) {
-  //   return this.queue.add(() => {
-  //     if (this.mode !== Mode.NORMAL && this.mode !== Mode.WAKE_UP)
-  //       throw new IllegalOperationError(
-  //         'Sending data while not in normal or wake-up mode!'
-  //       )
-
-  //     const isFixed =
-  //       this.config?.transmissionMode === Option.TransmissionMode.fixed
-  //     if (!isFixed) {
-  //       if (this.config == null && address?.channel == null)
-  //         throw new Error(
-  //           'Channel is not set. Set channel via config or parameter!'
-  //         )
-
-  //       console.log(
-  //         'Transmission mode is not fixed, will ignore address parameter'
-  //       )
-  //     }
-
-  //     if (!this.ready()) {
-  //       throw new Error('Module is not ready to send data!')
-  //     }
-
-  //     const target = {
-  //       ...address,
-  //       channel: address.channel ?? this.config!.channel,
-  //     }
-  //     const $data = LoRaE32.wrapData(data, target)
-  //     for (const queue of $data) {
-  //       console.log(
-  //         'Writing packet:',
-  //         [...queue].map((v) => v.toString(16).padStart(2, '0')).join(' ')
-  //       )
-  //       this.uart.write(queue)
-  //     }
-  //     return new Promise<void>((res, rej) => {
-  //       this.aux.once('high-level', () => {
-  //         res()
-  //       })
-  //     })
-  //   })
-  // }
-
-  // sendRaw(data: Uint8Array) {
-  //   return this.queue.add(() => {
-  //     if (this.mode !== MODE.NORMAL && this.mode !== MODE.WAKE_UP)
-  //       throw new IllegalOperationError(
-  //         'Sending data while not in normal or wake-up mode!'
-  //       )
-
-  //     if (!this.ready()) {
-  //       throw new Error('Module is not ready to send data!')
-  //     }
-
-  //     this.uart.write(data)
-  //     return new Promise<void>((res, rej) => {
-  //       this.aux.once('high-level', () => {
-  //         res()
-  //       })
-  //     })
-  //   })
-  // }
-
+  override addListener(
+    eventName: 'dropped',
+    listener: (err: NetworkError) => void
+  ): void
+  override addListener(eventName: 'error', listener: (err: Error) => void): void
   override addListener(eventName: 'mode', listener: (mode: Mode) => void): void
   override addListener(
     eventName: 'message',
@@ -377,8 +249,12 @@ export class LoRaE32 extends EventEmitter implements Connection {
       )
 
     // set padding for data
-    const d = new Uint8Array([0, 0, 0x01, ...data, 0x04, 0, 0])
-    print.info('Sending packet:', data)
-    return this.uart.write(d)
+    // const d = new Uint8Array([0, 0, 0x01, ...data, 0x04, 0, 0])
+    print.log('Sending packet:', data)
+    return this.link.send(data)
+  }
+
+  write(data: Uint8Array) {
+    return this.link.write(data)
   }
 }

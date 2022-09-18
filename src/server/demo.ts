@@ -1,10 +1,10 @@
 import { BufferedGraphicsContext } from 'graphics'
 import { Rep } from 'src/lib/connection/reply.js'
 import { nanoid } from 'nanoid/non-secure'
-import { Print } from 'src/lib/print.js'
 import { Display } from 'src/lib/display.js'
+import { Logger } from 'src/lib/debug.js'
 
-const print = Print.prefix('[Demo]')
+const print = new Logger(false, ['[Server]'])
 console.log(print)
 
 function equal(a: Uint8Array, b: Uint8Array) {
@@ -40,6 +40,7 @@ export default class Demo {
 
     rep.on('message', (message) => {
       const data = message.data.toTypedArray()
+      print.log('Got message from Rep server:', message)
       try {
         // get fragment size
         if (equal(data, Demo.GET_PACKET_SIZE)) {
@@ -61,7 +62,7 @@ export default class Demo {
           return rep.send(this.string.subarray(start, end))
         }
       } catch (e) {
-        print.error('Error on handling request:', e)
+        print.log('Error on handling request:', e)
         return rep.send(Uint8Array.of(0x15, 0x15, 0x15, 0x15, 0x15))
       }
     })
