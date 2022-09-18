@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    // modules
+    "baseUrl": "./",
+    "module": "ESNext",
+    "moduleResolution": "nodenext",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "target": "ESNext",
+    "strict": true,
+    "strictPropertyInitialization": false
+  },
+  "ts-node": {
+    "esm": true
+  }
+}
