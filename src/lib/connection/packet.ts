@@ -151,6 +151,18 @@ export class MessagePacket extends Packet {
 
 export class BroadcastPacket extends Packet {
   prefix = 0x01
+
+  static from(packet: Uint8Array): BroadcastPacket {
+    const prefix = packet[0]
+    if (prefix !== 0x01) throw new UnwantedPacketError(packet, 0x01, prefix)
+
+    const data = packet.subarray(1)
+
+    const result = Object.assign(new BroadcastPacket(), {
+      data: Arrayable(data),
+    })
+    return result
+  }
 }
 
 const printMsg = new Logger(false, ['[MessageHandler]'])

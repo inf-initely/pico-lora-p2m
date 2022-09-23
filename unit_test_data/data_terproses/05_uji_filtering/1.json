@@ -1,0 +1,328 @@
+{
+  "memory": [
+    { "type": "client", "log": [] },
+    { "type": "server", "log": [] }
+  ],
+  "log": [
+    {
+      "type": "log",
+      "ms": "1663531813419",
+      "context": { "from": "Broadcast", "message": "Request sent", "data": "{" }
+    },
+    {
+      "type": "log",
+      "ms": "1663531813441",
+      "context": {
+        "from": "Broadcast",
+        "message": "Data sent",
+        "data": "4a 74 31 62 56 64 59 70 31 6a 42 62 48 45 39 42 56 2d 42 59 45 67 70 68 44 52 41 34 5a 42 68 68 49 43 34 53 43 4a 52 38 42 71 4a 69 4e 45 50 43"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531814420",
+      "context": { "from": "Broadcast", "message": "Request sent", "data": "{" }
+    },
+    {
+      "type": "log",
+      "ms": "1663531814443",
+      "context": {
+        "from": "Broadcast",
+        "message": "Data sent",
+        "data": "41 7a 66 58 54 78 77 50 4c 56 41 70 6b 68 78 67 32 37 4f 77 65 54 39 4e 6a 71 65 32 69 49 5f 53 45 52 33 53 7a 66 6e 32 54 62 72 69 42 51 43 30"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531815420",
+      "context": { "from": "Broadcast", "message": "Request sent", "data": "{" }
+    },
+    {
+      "type": "log",
+      "ms": "1663531815443",
+      "context": {
+        "from": "Broadcast",
+        "message": "Data sent",
+        "data": "47 58 76 5a 38 56 6b 75 4c 4a 46 59 76 67 70 45 50 4c 61 69 46 35 50 50 70 48 51 4d 4d 47 50 30 71 33 51 7a 33 74 5a 78 70 6d 50 6e 78 75 75 79"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531816421",
+      "context": { "from": "Broadcast", "message": "Request sent", "data": "{" }
+    },
+    {
+      "type": "log",
+      "ms": "1663531816445",
+      "context": {
+        "from": "Broadcast",
+        "message": "Data sent",
+        "data": "7a 65 6f 39 44 69 5a 48 37 53 30 33 50 49 30 42 73 6e 4c 4d 44 6d 50 32 5f 79 37 75 69 43 2d 46 73 56 34 62 35 2d 49 4b 59 6e 50 4e 5a 69 58 63"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531817423",
+      "context": { "from": "Broadcast", "message": "Request sent", "data": "{" }
+    },
+    {
+      "type": "log",
+      "ms": "1663531817445",
+      "context": {
+        "from": "Broadcast",
+        "message": "Data sent",
+        "data": "70 44 4e 56 47 77 47 78 31 62 52 58 6e 33 44 74 4d 34 5f 65 51 70 76 58 48 33 71 6f 59 78 35 66 39 6d 36 45 68 58 45 30 39 37 30 6c 55 4c 63 74"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531818424",
+      "context": { "from": "Broadcast", "message": "Request sent", "data": "{" }
+    },
+    {
+      "type": "log",
+      "ms": "1663531818447",
+      "context": {
+        "from": "Broadcast",
+        "message": "Data sent",
+        "data": "77 6e 2d 66 56 79 78 36 77 52 65 4a 2d 61 50 38 42 43 69 77 49 30 71 65 53 54 76 39 70 66 34 45 44 2d 32 79 5f 45 4e 59 72 66 61 56 55 34 34 4a"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531819427",
+      "context": { "from": "Broadcast", "message": "Request sent", "data": "{" }
+    },
+    {
+      "type": "log",
+      "ms": "1663531819449",
+      "context": {
+        "from": "Broadcast",
+        "message": "Data sent",
+        "data": "5f 42 35 75 64 4b 44 47 45 70 46 73 4d 35 69 42 39 41 46 54 67 54 76 57 37 64 32 32 58 58 2d 79 46 59 5a 50 4b 45 76 59 79 78 37 33 31 4d 2d 66"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531820428",
+      "context": { "from": "Broadcast", "message": "Request sent", "data": "{" }
+    },
+    {
+      "type": "log",
+      "ms": "1663531820452",
+      "context": {
+        "from": "Broadcast",
+        "message": "Data sent",
+        "data": "75 42 32 57 78 48 46 45 6a 73 4d 57 55 53 43 63 76 61 59 47 54 56 46 4b 56 4f 64 54 66 35 57 71 49 47 38 31 34 5f 39 53 47 65 6e 79 50 2d 76 44"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531821429",
+      "context": { "from": "Broadcast", "message": "Request sent", "data": "{" }
+    },
+    {
+      "type": "log",
+      "ms": "1663531821455",
+      "context": {
+        "from": "Broadcast",
+        "message": "Data sent",
+        "data": "42 75 5f 58 48 7a 77 71 73 62 52 68 50 44 32 6a 69 37 4a 58 53 39 31 61 35 6a 7a 75 4e 4b 31 44 41 6a 6b 45 78 57 48 6a 4f 34 4d 72 53 49 41 5a"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531822430",
+      "context": { "from": "Broadcast", "message": "Request sent", "data": "{" }
+    },
+    {
+      "type": "log",
+      "ms": "1663531822454",
+      "context": {
+        "from": "Broadcast",
+        "message": "Data sent",
+        "data": "69 31 75 71 4c 4d 56 58 79 47 41 49 42 6f 6f 70 36 37 64 61 4a 4b 33 41 47 79 62 6a 48 4f 4a 58 33 79 62 63 67 71 6c 4a 72 7a 36 4d 51 50 32 70"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531813905",
+      "context": {
+        "from": "Reply",
+        "message": "A message got dropped",
+        "data": "Error: Message is not wanted. Accept only: 2, instead got: 1"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531813926",
+      "context": {
+        "from": "Reply",
+        "message": "Message array",
+        "data": "01 4a 74 31 62 56 64 59 70 31 6a 42 62 48 45 39 42 56 2d 42 59 45 67 70 68 44 52 41 34 5a 42 68 68 49 43 34 53 43 4a 52 38 42 71 4a 69 4e 45 50 43"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531814904",
+      "context": {
+        "from": "Reply",
+        "message": "A message got dropped",
+        "data": "Error: Message is not wanted. Accept only: 2, instead got: 1"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531814928",
+      "context": {
+        "from": "Reply",
+        "message": "Message array",
+        "data": "01 41 7a 66 58 54 78 77 50 4c 56 41 70 6b 68 78 67 32 37 4f 77 65 54 39 4e 6a 71 65 32 69 49 5f 53 45 52 33 53 7a 66 6e 32 54 62 72 69 42 51 43 30"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531815904",
+      "context": {
+        "from": "Reply",
+        "message": "A message got dropped",
+        "data": "Error: Message is not wanted. Accept only: 2, instead got: 1"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531815926",
+      "context": {
+        "from": "Reply",
+        "message": "Message array",
+        "data": "01 47 58 76 5a 38 56 6b 75 4c 4a 46 59 76 67 70 45 50 4c 61 69 46 35 50 50 70 48 51 4d 4d 47 50 30 71 33 51 7a 33 74 5a 78 70 6d 50 6e 78 75 75 79"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531816907",
+      "context": {
+        "from": "Reply",
+        "message": "A message got dropped",
+        "data": "Error: Message is not wanted. Accept only: 2, instead got: 1"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531816931",
+      "context": {
+        "from": "Reply",
+        "message": "Message array",
+        "data": "01 7a 65 6f 39 44 69 5a 48 37 53 30 33 50 49 30 42 73 6e 4c 4d 44 6d 50 32 5f 79 37 75 69 43 2d 46 73 56 34 62 35 2d 49 4b 59 6e 50 4e 5a 69 58 63"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531817907",
+      "context": {
+        "from": "Reply",
+        "message": "A message got dropped",
+        "data": "Error: Message is not wanted. Accept only: 2, instead got: 1"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531817931",
+      "context": {
+        "from": "Reply",
+        "message": "Message array",
+        "data": "01 70 44 4e 56 47 77 47 78 31 62 52 58 6e 33 44 74 4d 34 5f 65 51 70 76 58 48 33 71 6f 59 78 35 66 39 6d 36 45 68 58 45 30 39 37 30 6c 55 4c 63 74"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531818908",
+      "context": {
+        "from": "Reply",
+        "message": "A message got dropped",
+        "data": "Error: Message is not wanted. Accept only: 2, instead got: 1"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531818929",
+      "context": {
+        "from": "Reply",
+        "message": "Message array",
+        "data": "01 77 6e 2d 66 56 79 78 36 77 52 65 4a 2d 61 50 38 42 43 69 77 49 30 71 65 53 54 76 39 70 66 34 45 44 2d 32 79 5f 45 4e 59 72 66 61 56 55 34 34 4a"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531819909",
+      "context": {
+        "from": "Reply",
+        "message": "A message got dropped",
+        "data": "Error: Message is not wanted. Accept only: 2, instead got: 1"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531819931",
+      "context": {
+        "from": "Reply",
+        "message": "Message array",
+        "data": "01 5f 42 35 75 64 4b 44 47 45 70 46 73 4d 35 69 42 39 41 46 54 67 54 76 57 37 64 32 32 58 58 2d 79 46 59 5a 50 4b 45 76 59 79 78 37 33 31 4d 2d 66"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531820911",
+      "context": {
+        "from": "Reply",
+        "message": "A message got dropped",
+        "data": "Error: Message is not wanted. Accept only: 2, instead got: 1"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531820936",
+      "context": {
+        "from": "Reply",
+        "message": "Message array",
+        "data": "01 75 42 32 57 78 48 46 45 6a 73 4d 57 55 53 43 63 76 61 59 47 54 56 46 4b 56 4f 64 54 66 35 57 71 49 47 38 31 34 5f 39 53 47 65 6e 79 50 2d 76 44"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531821916",
+      "context": {
+        "from": "Reply",
+        "message": "A message got dropped",
+        "data": "Error: Message is not wanted. Accept only: 2, instead got: 1"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531821938",
+      "context": {
+        "from": "Reply",
+        "message": "Message array",
+        "data": "01 42 75 5f 58 48 7a 77 71 73 62 52 68 50 44 32 6a 69 37 4a 58 53 39 31 61 35 6a 7a 75 4e 4b 31 44 41 6a 6b 45 78 57 48 6a 4f 34 4d 72 53 49 41 5a"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531822914",
+      "context": {
+        "from": "Reply",
+        "message": "A message got dropped",
+        "data": "Error: Message is not wanted. Accept only: 2, instead got: 1"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663531822941",
+      "context": {
+        "from": "Reply",
+        "message": "Message array",
+        "data": "01 69 31 75 71 4c 4d 56 58 79 47 41 49 42 6f 6f 70 36 37 64 61 4a 4b 33 41 47 79 62 6a 48 4f 4a 58 33 79 62 63 67 71 6c 4a 72 7a 36 4d 51 50 32 70"
+      }
+    }
+  ]
+}

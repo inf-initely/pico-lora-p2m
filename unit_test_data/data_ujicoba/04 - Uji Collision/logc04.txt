@@ -1,0 +1,412 @@
+clock.adjust(1663531242495)
+undefined
+ 
+> clock.adjust(1663531242495)> .load> .flash -wclock.adjust(1663531466703)
+undefined
+ 
+[Client] [1663531474328] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 7894
+}
+[Client] [1663531483550] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 7894
+}
+[Client] [1663531485187] A message got dropped: Error: Message is not wanted. Waiting for: 7894, instead got: 20724
+[Client] [1663531485192] Dropped message data: 77 4f 61 52 6f 71 38 61 74 77 53 46 47 30 38 7a 36 5a 56 38 31 6e 50 79 4e 61 51 77 47 55 75 79 54 53 50 66 48 67 51 58 7a 68 76 61 4d 7a 6a 33
+[Client] [1663531486136] A message got dropped: Error: Message is not wanted. Waiting for: 7894, instead got: 2336
+[Client] [1663531486141] Dropped message data: 6d 74 49 43 4c 61 4b 6b 49 76 32 59 49 4b 64 59 74 4e 55 75 68 72 5a 33 70 76 48 4f 41 4b 76 4e 78 4b 70 4e 54 41 2d 6f 76 77 41 70 62 34 6f 6d
+[Client] [1663531487076] A message got dropped: Error: Message is not wanted. Waiting for: 7894, instead got: 2336
+[Client] [1663531487081] Dropped message data: 6d 74 49 43 4c 61 4b 6b 49 76 32 59 49 4b 64 59 74 4e 55 75 68 72 5a 33 70 76 48 4f 41 4b 76 4e 78 4b 70 4e 54 41 2d 6f 76 77 41 70 62 34 6f 6d
+[Client] [1663531488026] A message got dropped: Error: Message is not wanted. Waiting for: 7894, instead got: 57052
+[Client] [1663531488031] Dropped message data: 36 50 48 71 49 33 63 62 68 6c 48 4a 38 68 74 59 4f 49 66 57 48 6b 30 46 55 30 6b 56 56 38 46 57 4f 57 43 4c 6d 43 4a 79 4b 33 48 58 4d 5a 38 62
+[Client] [1663531488973] A message got dropped: Error: Message is not wanted. Waiting for: 7894, instead got: 57052
+[Client] [1663531488978] Dropped message data: 36 50 48 71 49 33 63 62 68 6c 48 4a 38 68 74 59 4f 49 66 57 48 6b 30 46 55 30 6b 56 56 38 46 57 4f 57 43 4c 6d 43 4a 79 4b 33 48 58 4d 5a 38 62
+[Client] [1663531489912] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 7894
+}
+[Client] [1663531489984] A message got dropped: Error: Message is not wanted. Waiting for: 7894, instead got: 56821
+[Client] [1663531489989] Dropped message data: 6c 2d 68 54 54 32 44 56 61 66 63 74 50 32 6d 36 76 67 6b 42 30 52 79 6f 62 34 6e 34 56 53 64 57 37 45 56 58 65 4c 6a 78 67 45 79 6d 61 37 33 42
+[Client] [1663531495067] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 7894
+}
+[Client] [1663531501333] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 7894
+}
+[Client] [1663531503134] Received reply: 65 55 35 64 62 54 47 76 53 53 74 33 70 6c 6e 41 77 32 77 4e 74 37 49 6b 64 45 56 6a 6b 4e 42 65 37 34 41 50 7a 4a 69 46 56 48 76 58 67 36 5f 53
+[Client] [1663531503262] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 4525
+}
+[Client] [1663531505020] Received reply: 36 4f 35 64 33 6b 42 62 4a 51 49 49 6b 73 50 79 67 32 32 62 33 4a 38 76 76 4d 71 76 41 67 55 31 64 4e 4a 30 5a 36 48 61 4e 6d 58 74 73 57 4c 79
+[Client] [1663531505145] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 60678
+}
+[Client] [1663531506634] A message got dropped: Error: Message is not wanted. Waiting for: 60678, instead got: 56821
+[Client] [1663531506639] Dropped message data: 6c 2d 68 54 54 32 44 56 61 66 63 74 50 32 6d 36 76 67 6b 42 30 52 79 6f 62 34 6e 34 56 53 64 57 37 45 56 58 65 4c 6a 78 67 45 79 6d 61 37 33 42
+[Client] [1663531512600] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 60678
+}
+[Client] [1663531514361] Received reply: 46 47 57 38 79 66 38 71 6f 32 55 51 68 70 74 4f 36 53 43 53 30 47 67 54 41 47 44 74 55 44 79 65 36 38 5a 56 6a 2d 34 5f 56 66 63 61 68 43 41 62
+[Client] [1663531514487] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 54643
+}
+[Client] [1663531516285] A message got dropped: Error: Message is not wanted. Waiting for: 54643, instead got: 56821
+[Client] [1663531516290] Dropped message data: 6c 2d 68 54 54 32 44 56 61 66 63 74 50 32 6d 36 76 67 6b 42 30 52 79 6f 62 34 6e 34 56 53 64 57 37 45 56 58 65 4c 6a 78 67 45 79 6d 61 37 33 42
+[Client] [1663531517242] A message got dropped: Error: Message is not wanted. Waiting for: 54643, instead got: 44531
+[Client] [1663531517247] Dropped message data: 59 4c 6a 33 78 71 54 41 79 61 5a 67 79 67 70 55 6a 6d 47 58 4e 44 62 30 33 30 78 65 53 61 4a 69 43 77 4a 77 63 4f 71 43 6c 43 70 67 6e 31 43 54
+[Client] [1663531518180] A message got dropped: Error: Message is not wanted. Waiting for: 54643, instead got: 44531
+[Client] [1663531518186] Dropped message data: 59 4c 6a 33 78 71 54 41 79 61 5a 67 79 67 70 55 6a 6d 47 58 4e 44 62 30 33 30 78 65 53 61 4a 69 43 77 4a 77 63 4f 71 43 6c 43 70 67 6e 31 43 54
+[Client] [1663531519140] A message got dropped: Error: Message is not wanted. Waiting for: 54643, instead got: 27546
+[Client] [1663531519145] Dropped message data: 6f 4e 76 62 58 38 79 7a 59 38 44 66 54 48 49 31 62 34 35 46 65 73 68 77 44 37 57 66 4e 6a 6d 71 74 6c 32 45 2d 42 76 62 41 55 58 62 50 63 33 6c
+[Client] [1663531520073] A message got dropped: Error: Message is not wanted. Waiting for: 54643, instead got: 27546
+[Client] [1663531520082] Dropped message data: 6f 4e 76 62 58 38 79 7a 59 38 44 66 54 48 49 31 62 34 35 46 65 73 68 77 44 37 57 66 4e 6a 6d 71 74 6c 32 45 2d 42 76 62 41 55 58 62 50 63 33 6c
+[Client] [1663531521051] A message got dropped: Error: Message is not wanted. Waiting for: 54643, instead got: 51923
+[Client] [1663531521057] Dropped message data: 4e 57 5a 50 49 4e 67 73 53 65 76 4c 6d 6a 36 7a 39 45 51 4e 73 66 39 75 6f 6d 78 6a 75 37 34 72 53 50 7a 5a 62 64 6f 61 50 45 61 2d 4e 52 50 50
+[Client] [1663531522018] A message got dropped: Error: Message is not wanted. Waiting for: 54643, instead got: 51923
+[Client] [1663531522023] Dropped message data: 4e 57 5a 50 49 4e 67 73 53 65 76 4c 6d 6a 36 7a 39 45 51 4e 73 66 39 75 6f 6d 78 6a 75 37 34 72 53 50 7a 5a 62 64 6f 61 50 45 61 2d 4e 52 50 50
+[Client] [1663531522319] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 54643
+}
+[Client] [1663531523918] A message got dropped: Error: Message is not wanted. Waiting for: 54643, instead got: 60456
+[Client] [1663531523923] Dropped message data: 78 5a 6b 36 76 47 43 58 37 44 4f 37 53 37 64 58 56 36 63 74 4e 55 56 37 46 42 61 36 6b 54 31 62 4a 61 49 34 2d 31 55 67 32 47 4e 67 32 4c 59 64
+[Client] [1663531524874] A message got dropped: Error: Message is not wanted. Waiting for: 54643, instead got: 46925
+[Client] [1663531524880] Dropped message data: 34 61 56 7a 44 4d 31 4c 57 39 78 31 50 61 41 65 76 76 73 62 31 5f 4a 6d 4b 6d 44 33 4a 4e 50 37 42 59 48 49 42 76 68 77 51 4f 49 38 45 61 62 50
+[Client] [1663531525814] A message got dropped: Error: Message is not wanted. Waiting for: 54643, instead got: 46925
+[Client] [1663531525819] Dropped message data: 34 61 56 7a 44 4d 31 4c 57 39 78 31 50 61 41 65 76 76 73 62 31 5f 4a 6d 4b 6d 44 33 4a 4e 50 37 42 59 48 49 42 76 68 77 51 4f 49 38 45 61 62 50
+[Client] [1663531526799] A message got dropped: Error: Message is not wanted. Waiting for: 54643, instead got: 61746
+[Client] [1663531526804] Dropped message data: 71 41 69 4c 38 42 6a 53 68 37 33 76 6a 6d 4f 71 48 73 62 5a 42 7a 41 33 4f 52 49 52 67 79 4b 48 5f 57 50 54 51 50 33 4e 67 6c 34 55 4f 4e 59 46
+[Client] [1663531527767] A message got dropped: Error: Message is not wanted. Waiting for: 54643, instead got: 61746
+[Client] [1663531527772] Dropped message data: 71 41 69 4c 38 42 6a 53 68 37 33 76 6a 6d 4f 71 48 73 62 5a 42 7a 41 33 4f 52 49 52 67 79 4b 48 5f 57 50 54 51 50 33 4e 67 6c 34 55 4f 4e 59 46
+[Client] [1663531530622] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 54643
+}
+[Client] [1663531532381] Received reply: 4d 41 35 6f 52 6c 6f 58 42 74 31 63 4f 49 57 36 56 59 73 48 36 54 76 50 4f 51 52 5f 69 34 43 68 6c 7a 4a 4f 41 76 62 57 4f 77 38 48 69 36 56 70
+[Client] [1663531532509] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 30801
+}
+[Client] [1663531534267] Received reply: 58 31 6e 7a 2d 6d 61 6d 53 6d 56 43 35 45 6e 37 69 30 69 4e 45 74 34 63 70 6a 45 4a 7a 6e 59 4c 62 4b 79 56 5f 5f 6b 2d 43 5f 4f 58 38 6c 53 34
+[Client] [1663531534393] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 18646
+}
+[Client] [1663531536152] Received reply: 71 54 66 71 75 73 50 52 55 55 62 4c 76 6c 30 39 56 66 7a 47 67 6d 34 41 63 39 68 48 4e 56 41 34 31 31 67 41 77 6c 58 36 47 4e 6d 30 64 45 4e 34
+[Client] [1663531536277] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 48368
+}
+[Client] [1663531538034] Received reply: 62 53 4b 44 35 41 4a 59 4c 53 6e 4d 6f 6c 6a 34 2d 33 63 36 4b 55 6b 71 52 55 4e 6f 34 48 69 35 38 75 35 62 63 65 32 37 2d 70 59 73 72 67 74 6a
+[Client] [1663531538159] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 20784
+}
+[Client] [1663531539918] Received reply: 62 70 44 58 42 39 47 71 78 79 75 50 66 77 4f 55 64 7a 32 4a 6d 39 33 63 36 41 4b 69 31 76 57 44 36 7a 53 33 55 66 69 37 45 4d 46 77 61 77 55 59
+[Client] [1663531540043] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 52818
+}
+[Client] [1663531541805] Received reply: 4a 75 4c 6e 6c 61 4f 70 2d 74 79 51 64 64 4d 61 52 64 45 50 39 66 58 6b 6a 31 41 6e 63 31 72 31 69 48 59 6e 71 7a 42 49 65 56 75 45 76 72 64 67
+[Client] [1663531541931] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 46540
+}
+[Client] [1663531543694] Received reply: 70 42 64 34 66 37 38 2d 33 43 44 58 66 4b 57 35 34 37 35 38 59 6d 53 37 32 56 38 45 52 74 30 73 69 58 72 37 7a 71 65 4c 63 68 43 30 78 65 4e 41
+.mem
+SyntaxError: Primary expression expected. [<anonymous>:2:1]
+ .mem
+total: 200696, occupied: 90160, peak: 108392
+ > .mem
+total: 200696, occupied: 89792, peak: 108392
+ > .mem
+total: 200696, occupied: 89976, peak: 108392
+ [Client] [1663531587509] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 46967
+}
+[Client] [1663531587575] A message got dropped: Error: Message is not wanted. Waiting for: 46967, instead got: 25722
+[Client] [1663531587580] Dropped message data: 44 67 6a 55 43 5f 54 39 6c 56 58 44 68 65 45 36 49 6e 33 50 31 41 73 52 70 57 4a 6c 36 56 79 46 46 42 33 57 66 51 38 70 77 52 41 56 52 6c 6b 5a
+[Client] [1663531592748] A message got dropped: Error: Message is not wanted. Waiting for: 46967, instead got: 25722
+[Client] [1663531592754] Dropped message data: 44 67 6a 55 43 5f 54 39 6c 56 58 44 68 65 45 36 49 6e 33 50 31 41 73 52 70 57 4a 6c 36 56 79 46 46 42 33 57 66 51 38 70 77 52 41 56 52 6c 6b 5a
+[Client] [1663531593706] A message got dropped: Error: Message is not wanted. Waiting for: 46967, instead got: 25722
+[Client] [1663531593711] Dropped message data: 44 67 6a 55 43 5f 54 39 6c 56 58 44 68 65 45 36 49 6e 33 50 31 41 73 52 70 57 4a 6c 36 56 79 46 46 42 33 57 66 51 38 70 77 52 41 56 52 6c 6b 5a
+[Client] [1663531594658] A message got dropped: Error: Message is not wanted. Waiting for: 46967, instead got: 23930
+[Client] [1663531594663] Dropped message data: 31 43 51 31 75 75 6e 7a 5a 68 34 53 31 55 6c 48 4a 57 55 47 71 73 79 49 47 79 4e 67 59 49 4a 54 47 69 64 43 74 35 74 6a 37 79 47 43 33 51 5a 55
+[Client] [1663531595389] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 46967
+}
+[Client] [1663531597519] A message got dropped: Error: Message is not wanted. Waiting for: 46967, instead got: 8342
+[Client] [1663531597524] Dropped message data: 58 77 34 69 64 5f 74 30 56 62 76 4b 44 4d 6f 4f 73 51 64 6f 56 4a 56 4a 48 34 70 4b 57 38 49 69 4f 4a 69 50 48 38 4b 2d 48 4d 35 41 55 61 79 59
+[Client] [1663531598469] A message got dropped: Error: Message is not wanted. Waiting for: 46967, instead got: 1175
+[Client] [1663531598474] Dropped message data: 78 32 4c 4a 33 4e 6b 42 41 51 65 53 5a 46 37 4e 50 62 68 4f 44 45 47 72 73 59 37 67 52 51 66 50 7a 46 49 77 39 76 6d 66 66 44 48 48 4c 69 6c 49
+[Client] [1663531599423] A message got dropped: Error: Message is not wanted. Waiting for: 46967, instead got: 1175
+[Client] [1663531599428] Dropped message data: 78 32 4c 4a 33 4e 6b 42 41 51 65 53 5a 46 37 4e 50 62 68 4f 44 45 47 72 73 59 37 67 52 51 66 50 7a 46 49 77 39 76 6d 66 66 44 48 48 4c 69 6c 49
+[Client] [1663531600374] A message got dropped: Error: Message is not wanted. Waiting for: 46967, instead got: 31142
+[Client] [1663531600379] Dropped message data: 69 57 62 49 56 48 4f 65 38 6e 42 48 36 48 38 33 49 76 39 61 54 47 32 78 53 38 4b 41 53 71 78 76 64 44 50 32 75 79 72 34 2d 69 54 44 4e 4f 69 54
+[Client] [1663531600823] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 46967
+}
+[Client] [1663531603236] A message got dropped: Error: Message is not wanted. Waiting for: 46967, instead got: 63745
+[Client] [1663531603241] Dropped message data: 45 7a 38 47 63 47 70 35 6d 36 4a 57 72 36 46 7a 38 33 31 6b 36 4d 53 56 4d 42 71 6c 47 32 4f 65 72 6a 33 6e 76 32 6d 56 6c 66 64 6b 6b 4c 32 37
+[Client] [1663531604194] A message got dropped: Error: Message is not wanted. Waiting for: 46967, instead got: 4316
+[Client] [1663531604199] Dropped message data: 44 75 30 64 52 58 71 75 37 6c 50 69 52 62 42 58 64 41 44 52 4c 57 36 51 6a 7a 30 37 50 78 6a 34 38 64 32 43 75 48 43 72 76 72 71 63 63 61 50 32
+[Client] [1663531605141] A message got dropped: Error: Message is not wanted. Waiting for: 46967, instead got: 4316
+[Client] [1663531605147] Dropped message data: 44 75 30 64 52 58 71 75 37 6c 50 69 52 62 42 58 64 41 44 52 4c 57 36 51 6a 7a 30 37 50 78 6a 34 38 64 32 43 75 48 43 72 76 72 71 63 63 61 50 32
+[Client] [1663531605977] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 46967
+}
+[Client] [1663531606090] A message got dropped: Error: Message is not wanted. Waiting for: 46967, instead got: 59966
+[Client] [1663531606095] Dropped message data: 74 77 42 73 7a 71 50 49 32 34 75 4f 6b 47 70 57 5a 43 63 70 43 77 41 4e 72 66 2d 76 37 37 48 74 34 51 63 53 5f 37 45 55 52 35 56 58 62 62 6f 43
+[Client] [1663531611323] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 46967
+}
+[Client] [1663531613012] A message got dropped: Error: Message is not wanted. Waiting for: 46967, instead got: 59966
+[Client] [1663531613017] Dropped message data: 74 77 42 73 7a 71 50 49 32 34 75 4f 6b 47 70 57 5a 43 63 70 43 77 41 4e 72 66 2d 76 37 37 48 74 34 51 63 53 5f 37 45 55 52 35 56 58 62 62 6f 43
+[Client] [1663531617535] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 46967
+}
+[Client] [1663531619304] Received reply: 62 46 5a 37 7a 72 6d 71 47 58 6e 70 72 6c 71 33 75 52 66 32 59 4c 74 52 4b 6f 53 75 63 42 79 2d 52 37 45 59 57 59 6c 62 67 4e 75 6f 59 62 4f 73
+[Client] [1663531619436] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 3011
+}
+[Client] [1663531621200] Received reply: 6f 54 7a 49 47 66 39 57 6a 78 4c 43 67 53 53 6f 54 4e 6b 41 61 7a 52 36 6b 67 49 62 6e 47 41 2d 57 64 77 79 36 4d 76 7a 38 6d 2d 46 36 6f 64 2d
+[Client] [1663531621323] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 15268
+}
+[Client] [1663531623139] A message got dropped: Error: Message is not wanted. Waiting for: 15268, instead got: 59966
+[Client] [1663531623144] Dropped message data: 74 77 42 73 7a 71 50 49 32 34 75 4f 6b 47 70 57 5a 43 63 70 43 77 41 4e 72 66 2d 76 37 37 48 74 34 51 63 53 5f 37 45 55 52 35 56 58 62 62 6f 43
+[Client] [1663531624096] A message got dropped: Error: Message is not wanted. Waiting for: 15268, instead got: 18867
+[Client] [1663531624102] Dropped message data: 35 70 4f 33 79 6b 45 2d 6d 6b 31 6f 35 68 58 55 49 51 32 4b 6f 57 52 74 36 59 37 6e 4c 52 35 69 54 49 43 75 59 53 4f 54 57 48 58 39 7a 42 45 41
+[Client] [1663531625047] A message got dropped: Error: Message is not wanted. Waiting for: 15268, instead got: 18867
+[Client] [1663531625052] Dropped message data: 35 70 4f 33 79 6b 45 2d 6d 6b 31 6f 35 68 58 55 49 51 32 4b 6f 57 52 74 36 59 37 6e 4c 52 35 69 54 49 43 75 59 53 4f 54 57 48 58 39 7a 42 45 41
+[Client] [1663531626005] A message got dropped: Error: Message is not wanted. Waiting for: 15268, instead got: 31452
+[Client] [1663531626010] Dropped message data: 50 55 39 45 65 44 66 68 73 51 42 35 4b 45 5f 33 41 33 33 61 65 6c 62 67 65 6f 30 42 57 71 79 76 49 51 41 6c 51 4b 78 78 59 72 45 58 69 47 35 71
+[Client] [1663531626958] A message got dropped: Error: Message is not wanted. Waiting for: 15268, instead got: 31452
+[Client] [1663531626963] Dropped message data: 50 55 39 45 65 44 66 68 73 51 42 35 4b 45 5f 33 41 33 33 61 65 6c 62 67 65 6f 30 42 57 71 79 76 49 51 41 6c 51 4b 78 78 59 72 45 58 69 47 35 71
+[Client] [1663531627129] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 15268
+}
+[Client] [1663531628885] Received reply: 6f 57 62 5f 48 72 4e 4d 65 47 5f 7a 79 55 45 72 4f 2d 68 69 53 6a 6a 4b 7a 62 46 58 79 41 38 7a 74 61 76 2d 54 41 59 70 78 4c 37 35 62 77 57 53
+[Client] [1663531629012] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 18446
+}
+[Client] [1663531630781] Received reply: 49 62 56 41 41 67 6b 76 6b 73 74 4a 33 54 34 6f 53 64 70 33 43 62 71 69 56 6b 67 54 4d 38 48 6a 42 34 35 37 42 53 4b 4e 41 4a 41 56 48 4e 56 4d
+[Client] [1663531630906] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 52762
+}
+[Client] [1663531632667] Received reply: 53 61 6b 46 54 6f 46 76 37 52 66 66 45 57 35 32 36 50 30 32 37 78 61 31 65 5a 79 44 35 2d 77 41 64 32 61 44 69 2d 39 34 47 55 51 34 70 56 50 39
+[Client] [1663531632792] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 30923
+}
+[Client] [1663531634599] Received reply: 35 45 6d 62 4d 35 79 37 2d 4a 69 52 63 56 6a 4f 48 52 4b 77 62 30 56 48 77 61 46 33 56 70 45 6a 76 73 65 4a 6e 73 50 5f 68 6a 2d 55 4d 78 62 42
+[Client] [1663531634726] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 3097
+}
+[Client] [1663531636538] Received reply: 61 50 65 43 75 34 5a 76 62 57 6a 78 6a 32 68 45 68 75 6f 2d 39 59 71 7a 6f 30 63 52 66 69 63 64 48 53 57 55 46 4c 39 4f 59 62 2d 73 52 74 43 63
+[Client] [1663531636663] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 369
+}
+[Client] [1663531638428] Received reply: 58 74 6a 6e 4e 67 38 64 69 6f 35 6c 54 72 31 72 44 67 72 4f 68 45 4b 2d 49 79 6c 57 79 32 76 50 4f 2d 30 61 42 43 48 52 52 73 39 76 36 73 69 61
+[Client] [1663531638552] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 735
+}
+[Client] [1663531640316] Received reply: 77 30 5a 72 64 6c 69 63 53 4d 6a 72 4a 5a 69 49 48 35 6e 2d 74 63 67 6e 52 6b 46 34 37 70 52 69 6c 41 44 70 43 33 49 64 4d 66 77 64 47 4a 75 6c
+[Client] [1663531640441] Request sent: {
+  prefix: 2,
+  data: {
+    data: [Uint8Array],
+    toTypedArray: [Function],
+    length: 48
+  },
+  id: 53490
+}
+[Client] [1663531642204] Received reply: 73 6a 41 30 49 6b 52 77 67 4d 7a 6d 75 53 62 57 77 50 44 36 2d 39 55 36 4d 31 41 46 53 44 6e 35 7a 41 47 54 47 57 72 76 42 43 38 52 6f 39 33 6f
+> .mem
+total: 200696, occupied: 90344, peak: 108392
+ > .mem
+total: 200696, occupied: 91448, peak: 108392
+ > .mem
+total: 200696, occupied: 90896, peak: 108392
+ 

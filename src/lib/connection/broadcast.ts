@@ -22,10 +22,12 @@ export class Drain extends EventEmitter {
     super()
 
     connection.on('message', (msg) => {
-      const broadcastMsg = Object.assign(new BroadcastPacket(), {
-        data: Arrayable(msg),
-      })
-      this.emit('message', broadcastMsg)
+      try {
+        const broadcastMsg = BroadcastPacket.from(msg)
+        this.emit('message', broadcastMsg)
+      } catch (e: any) {
+        this.emit('error', e)
+      }
     })
   }
 }

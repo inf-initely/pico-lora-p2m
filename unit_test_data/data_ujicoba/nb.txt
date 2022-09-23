@@ -1,0 +1,8 @@
+01 = Uji Round Trip
+02 = Uji Payload
+  - 256, butuh waitTime sekitar 10s
+  - 384, butuh waitTime sekitar 20s
+  - 500, butuh waitTime sekitar 60s
+03 = Uji broadcast
+04 = Uji collision
+  

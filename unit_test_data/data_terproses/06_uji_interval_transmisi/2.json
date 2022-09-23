@@ -1,0 +1,618 @@
+{
+  "memory": [
+    {
+      "type": "client",
+      "log": [
+        {
+          "type": "memory",
+          "ms": -1,
+          "context": { "total": "200696", "occupied": "85472", "peak": "95920" }
+        },
+        {
+          "type": "memory",
+          "ms": -1,
+          "context": { "total": "200696", "occupied": "83632", "peak": "95920" }
+        },
+        {
+          "type": "memory",
+          "ms": -1,
+          "context": { "total": "200696", "occupied": "86024", "peak": "95920" }
+        }
+      ]
+    },
+    {
+      "type": "server",
+      "log": [
+        {
+          "type": "memory",
+          "ms": -1,
+          "context": {
+            "total": "200696",
+            "occupied": "91128",
+            "peak": "102336"
+          }
+        },
+        {
+          "type": "memory",
+          "ms": -1,
+          "context": {
+            "total": "200696",
+            "occupied": "89288",
+            "peak": "102336"
+          }
+        },
+        {
+          "type": "memory",
+          "ms": -1,
+          "context": {
+            "total": "200696",
+            "occupied": "86528",
+            "peak": "102336"
+          }
+        }
+      ]
+    },
+    {
+      "type": "client2",
+      "log": [
+        {
+          "type": "memory",
+          "ms": -1,
+          "context": { "total": "200696", "occupied": "83624", "peak": "95896" }
+        },
+        {
+          "type": "memory",
+          "ms": -1,
+          "context": { "total": "200696", "occupied": "86200", "peak": "95896" }
+        },
+        {
+          "type": "memory",
+          "ms": -1,
+          "context": { "total": "200696", "occupied": "84728", "peak": "95896" }
+        }
+      ]
+    }
+  ],
+  "log": [
+    {
+      "type": "log",
+      "ms": "1663533116724",
+      "context": {
+        "from": "DrainDev2",
+        "message": "Received broadcast",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533116737",
+      "context": {
+        "from": "DrainDev2",
+        "message": "Data",
+        "data": "01 74 65 43 54 61 76 4b 48 46 57 63 58 37 37 34 62 55 43 36 6e 4b 4c 72 76 71 66 36 78 6f 6b 42 41 2d 5f 6d 6d 66 61 45 68 5f 4c 4b 46 57 6a 5f 61"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533117431",
+      "context": {
+        "from": "DrainDev2",
+        "message": "Received broadcast",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533117444",
+      "context": {
+        "from": "DrainDev2",
+        "message": "Data",
+        "data": "01 62 44 6e 79 74 66 77 62 5a 4e 55 52 50 78 43 4d 53 72 2d 61 4b 7a 50 44 41 51 75 4f 46 73 7a 61 66 54 34 5a 70 50 4c 54 54 75 33 50 50 51 39 6c"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533118130",
+      "context": {
+        "from": "DrainDev2",
+        "message": "Received broadcast",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533118146",
+      "context": {
+        "from": "DrainDev2",
+        "message": "Data",
+        "data": "01 77 4e 4d 46 61 33 57 72 4c 35 49 4d 4a 6f 35 67 6a 6d 51 39 4c 6d 43 35 49 77 72 46 35 6f 56 7a 58 59 4c 62 59 45 67 6b 59 5a 7a 49 4c 6e 30 44"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533118834",
+      "context": {
+        "from": "DrainDev2",
+        "message": "Received broadcast",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533118847",
+      "context": {
+        "from": "DrainDev2",
+        "message": "Data",
+        "data": "01 75 36 42 53 4a 46 39 41 6b 57 74 69 45 45 37 44 4f 4a 71 62 39 59 47 38 66 45 79 32 43 56 35 43 68 51 76 53 55 44 76 39 5f 49 35 46 7a 62 43 72"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533119532",
+      "context": {
+        "from": "DrainDev2",
+        "message": "Received broadcast",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533119546",
+      "context": {
+        "from": "DrainDev2",
+        "message": "Data",
+        "data": "01 32 46 70 69 6f 46 6e 61 39 56 35 39 31 45 7a 6e 33 41 31 4b 62 50 49 6f 61 69 66 71 4f 31 52 64 30 5a 44 63 45 38 67 37 52 53 43 49 47 4c 32 53"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533120234",
+      "context": {
+        "from": "DrainDev2",
+        "message": "Received broadcast",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533120250",
+      "context": {
+        "from": "DrainDev2",
+        "message": "Data",
+        "data": "01 42 36 43 34 67 41 36 53 4d 58 2d 4d 39 7a 39 71 6f 33 68 4e 5a 74 56 67 41 74 79 43 59 6e 49 75 4d 6c 38 65 59 59 4b 56 37 38 43 78 4a 31 64 69"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533120941",
+      "context": {
+        "from": "DrainDev2",
+        "message": "Received broadcast",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533120954",
+      "context": {
+        "from": "DrainDev2",
+        "message": "Data",
+        "data": "01 2d 46 45 53 6a 4e 5a 74 6e 2d 41 52 5a 49 49 59 4b 49 75 4a 4f 34 70 36 70 68 44 51 61 64 7a 6d 49 33 49 4a 4c 67 49 6b 63 6e 7a 63 5f 64 6f 57"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533121643",
+      "context": {
+        "from": "DrainDev2",
+        "message": "Received broadcast",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533121656",
+      "context": {
+        "from": "DrainDev2",
+        "message": "Data",
+        "data": "01 47 6b 6a 58 68 46 7a 54 75 34 65 5f 67 34 38 33 4e 32 70 51 79 62 72 38 57 76 31 69 78 74 65 73 49 6a 7a 70 38 71 6f 55 4b 5f 37 56 36 35 7a 68"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533122338",
+      "context": {
+        "from": "DrainDev2",
+        "message": "Received broadcast",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533122352",
+      "context": {
+        "from": "DrainDev2",
+        "message": "Data",
+        "data": "01 5a 71 59 74 54 4c 61 39 6b 47 67 70 4a 54 71 73 35 57 71 34 34 39 59 65 49 48 4d 78 36 59 72 35 71 7a 44 6f 30 35 34 42 6f 63 58 7a 74 38 39 4a"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533122794",
+      "context": {
+        "from": "DrainDev2",
+        "message": "Received broadcast",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533122808",
+      "context": {
+        "from": "DrainDev2",
+        "message": "Data",
+        "data": "01 35 41 72 69 71 33 69 59 56 55 6c 58 64 4c 57 77 32 6f 38 42 51 4f 59 4c 43 33 56 35 42 69 77 63 6d 50 67 31 35 61 44 2d 49 76 49 2d 43 61 64 36"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533116249",
+      "context": {
+        "from": "Drain",
+        "message": "Received broadcast",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533116258",
+      "context": {
+        "from": "Drain",
+        "message": "Data",
+        "data": "01 74 65 43 54 61 76 4b 48 46 57 63 58 37 37 34 62 55 43 36 6e 4b 4c 72 76 71 66 36 78 6f 6b 42 41 2d 5f 6d 6d 66 61 45 68 5f 4c 4b 46 57 6a 5f 61"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533116955",
+      "context": {
+        "from": "Drain",
+        "message": "Received broadcast",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533116964",
+      "context": {
+        "from": "Drain",
+        "message": "Data",
+        "data": "01 62 44 6e 79 74 66 77 62 5a 4e 55 52 50 78 43 4d 53 72 2d 61 4b 7a 50 44 41 51 75 4f 46 73 7a 61 66 54 34 5a 70 50 4c 54 54 75 33 50 50 51 39 6c"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533117652",
+      "context": {
+        "from": "Drain",
+        "message": "Received broadcast",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533117661",
+      "context": {
+        "from": "Drain",
+        "message": "Data",
+        "data": "01 77 4e 4d 46 61 33 57 72 4c 35 49 4d 4a 6f 35 67 6a 6d 51 39 4c 6d 43 35 49 77 72 46 35 6f 56 7a 58 59 4c 62 59 45 67 6b 59 5a 7a 49 4c 6e 30 44"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533118353",
+      "context": {
+        "from": "Drain",
+        "message": "Received broadcast",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533118362",
+      "context": {
+        "from": "Drain",
+        "message": "Data",
+        "data": "01 75 36 42 53 4a 46 39 41 6b 57 74 69 45 45 37 44 4f 4a 71 62 39 59 47 38 66 45 79 32 43 56 35 43 68 51 76 53 55 44 76 39 5f 49 35 46 7a 62 43 72"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533119056",
+      "context": {
+        "from": "Drain",
+        "message": "Received broadcast",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533119067",
+      "context": {
+        "from": "Drain",
+        "message": "Data",
+        "data": "01 32 46 70 69 6f 46 6e 61 39 56 35 39 31 45 7a 6e 33 41 31 4b 62 50 49 6f 61 69 66 71 4f 31 52 64 30 5a 44 63 45 38 67 37 52 53 43 49 47 4c 32 53"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533119759",
+      "context": {
+        "from": "Drain",
+        "message": "Received broadcast",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533119768",
+      "context": {
+        "from": "Drain",
+        "message": "Data",
+        "data": "01 42 36 43 34 67 41 36 53 4d 58 2d 4d 39 7a 39 71 6f 33 68 4e 5a 74 56 67 41 74 79 43 59 6e 49 75 4d 6c 38 65 59 59 4b 56 37 38 43 78 4a 31 64 69"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533120459",
+      "context": {
+        "from": "Drain",
+        "message": "Received broadcast",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533120470",
+      "context": {
+        "from": "Drain",
+        "message": "Data",
+        "data": "01 2d 46 45 53 6a 4e 5a 74 6e 2d 41 52 5a 49 49 59 4b 49 75 4a 4f 34 70 36 70 68 44 51 61 64 7a 6d 49 33 49 4a 4c 67 49 6b 63 6e 7a 63 5f 64 6f 57"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533121159",
+      "context": {
+        "from": "Drain",
+        "message": "Received broadcast",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533121168",
+      "context": {
+        "from": "Drain",
+        "message": "Data",
+        "data": "01 47 6b 6a 58 68 46 7a 54 75 34 65 5f 67 34 38 33 4e 32 70 51 79 62 72 38 57 76 31 69 78 74 65 73 49 6a 7a 70 38 71 6f 55 4b 5f 37 56 36 35 7a 68"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533121865",
+      "context": {
+        "from": "Drain",
+        "message": "Received broadcast",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533121874",
+      "context": {
+        "from": "Drain",
+        "message": "Data",
+        "data": "01 5a 71 59 74 54 4c 61 39 6b 47 67 70 4a 54 71 73 35 57 71 34 34 39 59 65 49 48 4d 78 36 59 72 35 71 7a 44 6f 30 35 34 42 6f 63 58 7a 74 38 39 4a"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533122312",
+      "context": {
+        "from": "Drain",
+        "message": "Received broadcast",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533122321",
+      "context": {
+        "from": "Drain",
+        "message": "Data",
+        "data": "01 35 41 72 69 71 33 69 59 56 55 6c 58 64 4c 57 77 32 6f 38 42 51 4f 59 4c 43 33 56 35 42 69 77 63 6d 50 67 31 35 61 44 2d 49 76 49 2d 43 61 64 36"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533115533",
+      "context": {
+        "from": "Broadcast",
+        "message": "Broadcast sent",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533115545",
+      "context": {
+        "from": "Broadcast",
+        "message": "Data sent",
+        "data": "74 65 43 54 61 76 4b 48 46 57 63 58 37 37 34 62 55 43 36 6e 4b 4c 72 76 71 66 36 78 6f 6b 42 41 2d 5f 6d 6d 66 61 45 68 5f 4c 4b 46 57 6a 5f 61"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533115663",
+      "context": {
+        "from": "Broadcast",
+        "message": "Broadcast sent",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533115675",
+      "context": {
+        "from": "Broadcast",
+        "message": "Data sent",
+        "data": "62 44 6e 79 74 66 77 62 5a 4e 55 52 50 78 43 4d 53 72 2d 61 4b 7a 50 44 41 51 75 4f 46 73 7a 61 66 54 34 5a 70 50 4c 54 54 75 33 50 50 51 39 6c"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533115791",
+      "context": {
+        "from": "Broadcast",
+        "message": "Broadcast sent",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533115803",
+      "context": {
+        "from": "Broadcast",
+        "message": "Data sent",
+        "data": "77 4e 4d 46 61 33 57 72 4c 35 49 4d 4a 6f 35 67 6a 6d 51 39 4c 6d 43 35 49 77 72 46 35 6f 56 7a 58 59 4c 62 59 45 67 6b 59 5a 7a 49 4c 6e 30 44"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533115920",
+      "context": {
+        "from": "Broadcast",
+        "message": "Broadcast sent",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533115932",
+      "context": {
+        "from": "Broadcast",
+        "message": "Data sent",
+        "data": "75 36 42 53 4a 46 39 41 6b 57 74 69 45 45 37 44 4f 4a 71 62 39 59 47 38 66 45 79 32 43 56 35 43 68 51 76 53 55 44 76 39 5f 49 35 46 7a 62 43 72"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533116048",
+      "context": {
+        "from": "Broadcast",
+        "message": "Broadcast sent",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533116061",
+      "context": {
+        "from": "Broadcast",
+        "message": "Data sent",
+        "data": "32 46 70 69 6f 46 6e 61 39 56 35 39 31 45 7a 6e 33 41 31 4b 62 50 49 6f 61 69 66 71 4f 31 52 64 30 5a 44 63 45 38 67 37 52 53 43 49 47 4c 32 53"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533116179",
+      "context": {
+        "from": "Broadcast",
+        "message": "Broadcast sent",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533116191",
+      "context": {
+        "from": "Broadcast",
+        "message": "Data sent",
+        "data": "42 36 43 34 67 41 36 53 4d 58 2d 4d 39 7a 39 71 6f 33 68 4e 5a 74 56 67 41 74 79 43 59 6e 49 75 4d 6c 38 65 59 59 4b 56 37 38 43 78 4a 31 64 69"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533116309",
+      "context": {
+        "from": "Broadcast",
+        "message": "Broadcast sent",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533116322",
+      "context": {
+        "from": "Broadcast",
+        "message": "Data sent",
+        "data": "2d 46 45 53 6a 4e 5a 74 6e 2d 41 52 5a 49 49 59 4b 49 75 4a 4f 34 70 36 70 68 44 51 61 64 7a 6d 49 33 49 4a 4c 67 49 6b 63 6e 7a 63 5f 64 6f 57"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533116437",
+      "context": {
+        "from": "Broadcast",
+        "message": "Broadcast sent",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533116448",
+      "context": {
+        "from": "Broadcast",
+        "message": "Data sent",
+        "data": "47 6b 6a 58 68 46 7a 54 75 34 65 5f 67 34 38 33 4e 32 70 51 79 62 72 38 57 76 31 69 78 74 65 73 49 6a 7a 70 38 71 6f 55 4b 5f 37 56 36 35 7a 68"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533116568",
+      "context": {
+        "from": "Broadcast",
+        "message": "Broadcast sent",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533116580",
+      "context": {
+        "from": "Broadcast",
+        "message": "Data sent",
+        "data": "5a 71 59 74 54 4c 61 39 6b 47 67 70 4a 54 71 73 35 57 71 34 34 39 59 65 49 48 4d 78 36 59 72 35 71 7a 44 6f 30 35 34 42 6f 63 58 7a 74 38 39 4a"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533116698",
+      "context": {
+        "from": "Broadcast",
+        "message": "Broadcast sent",
+        "data": "{"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663533116710",
+      "context": {
+        "from": "Broadcast",
+        "message": "Data sent",
+        "data": "35 41 72 69 71 33 69 59 56 55 6c 58 64 4c 57 77 32 6f 38 42 51 4f 59 4c 43 33 56 35 42 69 77 63 6d 50 67 31 35 61 44 2d 49 76 49 2d 43 61 64 36"
+      }
+    }
+  ]
+}

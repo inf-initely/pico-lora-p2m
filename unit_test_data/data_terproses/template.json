@@ -1,0 +1,7 @@
+{
+  "memory": [
+    { "type": "client", "log": [] },
+    { "type": "server", "log": [] }
+  ],
+  "log": []
+}

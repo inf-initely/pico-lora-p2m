@@ -1,6 +1,4 @@
 import { EventEmitter } from 'events'
-import { off } from 'process'
-import { UART } from 'uart'
 import { NetworkError } from './error.js'
 import { Address } from './packet.js'
 
@@ -17,9 +15,6 @@ export interface Connection extends EventEmitter {
 
   getAddress(): Address
 }
-
-const a = new UART(0)
-a.write
 
 export interface DataLink extends EventEmitter {
   write(data: Uint8Array): void

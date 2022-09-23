@@ -1,0 +1,151 @@
+{
+  "memory": [
+    {
+      "type": "client",
+      "log": [
+        {
+          "type": "memory",
+          "ms": -1,
+          "context": {
+            "total": "200696",
+            "occupied": "91208",
+            "peak": "102120"
+          }
+        }
+      ]
+    },
+    {
+      "type": "server",
+      "log": [
+        {
+          "type": "memory",
+          "ms": -1,
+          "context": { "total": "200696", "occupied": "89120", "peak": "96368" }
+        },
+        {
+          "type": "memory",
+          "ms": -1,
+          "context": { "total": "200696", "occupied": "92432", "peak": "96368" }
+        },
+        {
+          "type": "memory",
+          "ms": -1,
+          "context": { "total": "200696", "occupied": "93352", "peak": "96368" }
+        }
+      ]
+    }
+  ],
+  "log": [
+    {
+      "type": "log",
+      "ms": "1663507509136",
+      "context": { "from": "Request", "message": "Request sent", "data": "{" }
+    },
+    {
+      "type": "log",
+      "ms": "1663507510876",
+      "context": {
+        "from": "Request",
+        "message": "Received reply",
+        "data": "5f 4d 55 44 4a 34 39 57 35 6c 6e 43 76 37 63 64 79 6f 7a 4d 71 35 5f 44 78 65 6c 6f 76 56 4b 53 7a 4c 41 56 4f 7a 72 58 53 67 35 68 72 6e 6c 63"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663507511008",
+      "context": { "from": "Request", "message": "Request sent", "data": "{" }
+    },
+    {
+      "type": "log",
+      "ms": "1663507512742",
+      "context": {
+        "from": "Request",
+        "message": "Received reply",
+        "data": "71 45 68 71 6a 54 64 57 38 45 75 57 43 69 39 63 34 6c 55 47 50 37 4f 6c 4c 56 61 66 53 6f 58 72 4c 72 76 5f 4a 48 71 2d 56 30 54 4d 42 46 48 61"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663507512869",
+      "context": { "from": "Request", "message": "Request sent", "data": "{" }
+    },
+    {
+      "type": "log",
+      "ms": "1663507514611",
+      "context": {
+        "from": "Request",
+        "message": "Received reply",
+        "data": "4e 6f 53 30 35 5a 69 58 4a 44 52 63 57 70 78 35 75 51 55 53 76 58 75 74 4e 6b 7a 75 56 51 58 7a 6d 37 6d 79 76 77 34 49 69 33 43 69 79 47 6f 5f"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663507510359",
+      "context": {
+        "from": "Reply",
+        "message": "Received request",
+        "data": "5f 4d 55 44 4a 34 39 57 35 6c 6e 43 76 37 63 64 79 6f 7a 4d 71 35 5f 44 78 65 6c 6f 76 56 4b 53 7a 4c 41 56 4f 7a 72 58 53 67 35 68 72 6e 6c 63"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663507510463",
+      "context": { "from": "Reply", "message": "Reply sent", "data": "{" }
+    },
+    {
+      "type": "log",
+      "ms": "1663507510477",
+      "context": {
+        "from": "Reply",
+        "message": "Reflecting the request",
+        "data": "5f 4d 55 44 4a 34 39 57 35 6c 6e 43 76 37 63 64 79 6f 7a 4d 71 35 5f 44 78 65 6c 6f 76 56 4b 53 7a 4c 41 56 4f 7a 72 58 53 67 35 68 72 6e 6c 63"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663507512222",
+      "context": {
+        "from": "Reply",
+        "message": "Received request",
+        "data": "71 45 68 71 6a 54 64 57 38 45 75 57 43 69 39 63 34 6c 55 47 50 37 4f 6c 4c 56 61 66 53 6f 58 72 4c 72 76 5f 4a 48 71 2d 56 30 54 4d 42 46 48 61"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663507512329",
+      "context": { "from": "Reply", "message": "Reply sent", "data": "{" }
+    },
+    {
+      "type": "log",
+      "ms": "1663507512339",
+      "context": {
+        "from": "Reply",
+        "message": "Reflecting the request",
+        "data": "71 45 68 71 6a 54 64 57 38 45 75 57 43 69 39 63 34 6c 55 47 50 37 4f 6c 4c 56 61 66 53 6f 58 72 4c 72 76 5f 4a 48 71 2d 56 30 54 4d 42 46 48 61"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663507514089",
+      "context": {
+        "from": "Reply",
+        "message": "Received request",
+        "data": "4e 6f 53 30 35 5a 69 58 4a 44 52 63 57 70 78 35 75 51 55 53 76 58 75 74 4e 6b 7a 75 56 51 58 7a 6d 37 6d 79 76 77 34 49 69 33 43 69 79 47 6f 5f"
+      }
+    },
+    {
+      "type": "log",
+      "ms": "1663507514196",
+      "context": { "from": "Reply", "message": "Reply sent", "data": "{" }
+    },
+    {
+      "type": "log",
+      "ms": "1663507514206",
+      "context": {
+        "from": "Reply",
+        "message": "Reflecting the request",
+        "data": "4e 6f 53 30 35 5a 69 58 4a 44 52 63 57 70 78 35 75 51 55 53 76 58 75 74 4e 6b 7a 75 56 51 58 7a 6d 37 6d 79 76 77 34 49 69 33 43 69 79 47 6f 5f"
+      }
+    }
+  ]
+}
